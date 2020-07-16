@@ -7,5 +7,15 @@ $(document).ready(function () {
             { scrollTop: $(page).offset().top - 60 },
             speed
         );
+
+        if ($("#mentions-shadow").hasClass("mentions-shadow")){
+            initMentions();
+        }
+    });
+
+    $('#head-icon').click(function() {
+        if ($("#mentions-shadow").hasClass("mentions-shadow")){
+            initMentions();
+        }
     });
 });
