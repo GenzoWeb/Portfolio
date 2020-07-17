@@ -520,7 +520,7 @@ main{
 @media all and (max-width: 445px)
 {
     .footer{
-        height: 100px;
+        height: auto;
     }
 
     .text-footer{
