@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    let imagesToLoad = document.querySelectorAll('img[data-src]');
+    const loadImages = (image) => {
+        image.setAttribute('src', image.getAttribute('data-src'));
+        image.onload = () => {
+            image.removeAttribute('data-src');
+        };
+    };
+
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+
     if (navigator.userAgent.indexOf('Trident') > -1 || navigator.userAgent.indexOf('MSIE') > -1) {
         $('.parallax').css('background-attachment', 'inherit');
     }
@@ -17,6 +29,9 @@ $(document).ready(function () {
         $('#mentions').css('top' , hauteurMentions);
     }
 
+    resizeImage();
+    resizeMentions();
+
     window.onresize = function(){
         resizeImage();
         resizeMentions();
@@ -24,8 +39,5 @@ $(document).ready(function () {
         if ($("#mentions-shadow").hasClass("mentions-shadow")){
             initMentions();
         }
-    }
-
-    resizeImage();
-    resizeMentions();
+    } 
 });

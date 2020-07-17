@@ -51,7 +51,7 @@
                         <a class="link-card" href="http://www.genzo.fr/projet1/index.html">
                             <div class="zoom">
                                 <div class="image-card">
-                                    <img src="images/p1.png" alt="">
+                                    <img src="" data-src='images/p1.png' alt="image premier site">
                                 </div>
                                 <div class="text-image-card">
                                     <p>Réalisé pendant ma formation</p>
@@ -70,7 +70,7 @@
                         <a class="link-card" href="http://www.genzo.fr/projet2/">
                             <div class="zoom">
                                 <div class="image-card">
-                                    <img src="images/p2.jpg" alt="">
+                                    <img src="" data-src='images/p2.jpg' alt="image second site">
                                 </div>
                                 <div class="text-image-card">
                                     <p>Réalisé pendant ma formation</p>
@@ -88,7 +88,7 @@
                         <a class="link-card" href="http://www.genzo.fr/projet3/">
                             <div class="zoom">
                                 <div class="image-card">
-                                    <img src="images/p3.png" alt="">
+                                    <img src="" data-src='images/p3.png' alt="image troisième site">
                                 </div>
                                 <div class="text-image-card">
                                     <p>Réalisé pendant ma formation en utilisant une API</p>
@@ -106,7 +106,7 @@
                         <a class="link-card" href="http://www.genzo.fr/projet4/">
                             <div class="zoom">
                                 <div class="image-card">
-                                    <img src="images/p4.png" alt="">
+                                    <img src="" data-src='images/p4.png' alt="image quatrième site">
                                 </div>
                                 <div class="text-image-card">
                                     <p>Réalisé pendant ma formation</p>
@@ -124,7 +124,7 @@
                         <a class="link-card" href="http://www.genzo.fr/projet5/">
                             <div class="zoom">                    
                                 <div class="image-card">
-                                    <img src="images/p5.png" alt="">
+                                    <img src="" data-src='images/p5.png' alt="image cinquième site">
                                 </div>
                                 <div class="text-image-card">
                                     <p>Réalisé pendant ma formation en utilisant une API</p>
@@ -142,7 +142,7 @@
                         <a class="link-card" href="http://www.genzo.fr/mesrecettes/public/">
                             <div class="zoom">
                                 <div class="image-card">
-                                    <img src="images/p6.png" alt="">
+                                    <img src="" data-src='images/p6.png' alt="image sixième site">
                                 </div>
                                 <div class="text-image-card">
                                     <p>Projet personnel</p>
@@ -299,11 +299,11 @@
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="js/initMentions.js"></script>
+        <script src="js/backgroundImage.js"></script>
         <script src="js/app.js"></script>
         <script src="js/anchor.js"></script>
         <script src="js/mentions.js"></script>
-        <script src="js/backgroundImage.js"></script>
-
+        
     </body>
 </html>
 

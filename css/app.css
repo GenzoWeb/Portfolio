@@ -133,7 +133,7 @@ main{
     margin-left: -149px;
     color: #FFF;
     opacity: 0;
-    animation: transition 1s ease-in-out 1s forwards;
+    animation: transition 1.5s ease-in-out 1s forwards;
 }
 
 #portfolio{

@@ -19,9 +19,34 @@
         $_SESSION['inputs'] = $_POST;
         header('Location: index.php#contact');
     }else{
-        $headers = 'FROM: site@genzo.fr';
+        $to = 'genzo10@hotmail.fr';
+        $subject = 'Formulaire de contact';
+        $messageSend ='
+        <html>
+            <head>
+                <title>Contact Portfolio</title>
+            </head>
+            <body>
+                <p>
+                    Adresse mail : ' . $email .' <br/>
+                    Message envoyé par : ' . $name . '. <br/> <br/>'
+                    . $message .'
+                </p>
+            </body>
+        </html>
+        ';
+
+        $headers = array(
+            'MIME-Version' => '1.0',
+            'Content-type' => 'text/html; charset=UTF-8',
+            'From' => 'site@genzo.fr',
+            'Reply-To' => $email,
+            'X-Mailer' => 'PHP/' . phpversion()
+        );
+
         $_SESSION['success'] = "Votre message a bien été envoyé !";
-        mail('genzo10@hotmail.fr', 'Formulaire de contact', $message, $headers);
+
+        mail($to, $subject, $messageSend, $headers);
         header('Location: index.php#contact');
     }
 ?>
